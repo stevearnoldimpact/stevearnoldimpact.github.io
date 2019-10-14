@@ -16,13 +16,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <h1>Hello World</h1>
 <p>Click below to go to the conversion page</p>
-       <a href="https://phamchaz.github.io/conversion.html">Conversion</a>
+       <a href="https://stevearnoldimpact.github.io/conversion.html">Conversion</a>
  
 <p>Click below to go to the API Implementation page</p>
-       <a href="https://phamchaz.github.io/techtest.html">API Implementation</a>
+       <a href="https://stevearnoldimpact.github.io/api-implementation.html">API Implementation</a>
   
 <p>Click below to go to the Javascript tag implementation</p>
-       <a href="https://phamchaz.github.io/techtest2.html">Javascript tag implementation</a>
+       <a href="https://stevearnoldimpact.github.io/js-implementation.html">Javascript tag implementation</a>
   
   </body>
 </html>
