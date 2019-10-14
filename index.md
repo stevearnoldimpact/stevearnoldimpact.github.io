@@ -1,4 +1,4 @@
-title: WELCOME TO S A IMPACT!"  
+title: WELCOME TO S A IMPACT!
 
 ## Welcome to GitHub Pages
 
