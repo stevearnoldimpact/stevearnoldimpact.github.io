@@ -13,5 +13,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBHRNM9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+    <script type="text/javascript">
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    setTimeout(() => {
+      // Check for clickId from URL or from cookie
+      // if not we call generateClickId
+      var _cookie
+      var clickIdFromURL = document.location.search.split("clickId=")[1]
+      var clickIdFromCookie = getCookie('clickId')
+
+      if (clickIdFromURL) {
+        _cookie = clickIdFromURL
+      } else if (clickIdFromCookie) {
+        _cookie = clickIdFromCookie
+      } else {
+        ire('generateClickId', function(clickId) {
+          _cookie = clickId
+          document.cookie = "clickId=" + clickId + "; expires=86400;"
+        })
+      }
 </body>
 </html>
